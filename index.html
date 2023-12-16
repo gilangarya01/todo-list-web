@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body>
+    <main>
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a href="/index.html" class="btn btn-ghost text-xl">Todo List</a>
+        </div>
+      </div>
+      <div
+        class="card-todo lg:mx-32 mx-5 my-2 grid lg:grid-cols-4 grid-cols-2 gap-3"
+      >
+        <div class="card lg:w-60 text-white border-gray-700 border-2">
+          <div class="card-body">
+            <h2 class="card-title">Sehari hari</h2>
+            <div class="card-actions justify-end mt-3">
+              <a
+                href="/pages/detail_todo.html"
+                class="bg-yellow-400 text-black py-1 px-2 rounded-md hover:bg-yellow-600"
+              >
+                Detail
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="/pages/tambah_todo.html"
+        class="btn btn-warning fixed lg:inset-x-60 inset-x-0 bottom-0 m-5"
+      >
+        Add
+      </a>
+    </main>
+  </body>
+</html>

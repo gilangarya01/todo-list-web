@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Todo List</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a href="/index.html" class="btn btn-ghost text-xl"
+            ><i class="fa-solid fa-house"></i> Back</a
+          >
+        </div>
+      </div>
+      <div class="lg:mx-32 mx-5">
+        <input
+          type="text"
+          placeholder="Title Todo List"
+          class="input input-bordered input-md w-full text-center text-xl p-4"
+        />
+        <button class="btn btn-success mt-5">
+          <i class="fa-solid fa-plus text-lg"></i> Add
+        </button>
+        <div class="todo-area my-5">
+          <div class="bg-slate-700 flex items-center rounded-md p-3">
+            <input type="checkbox" class="checkbox" />
+            <input
+              type="text"
+              placeholder="My todo ..."
+              class="input input-sm w-full ml-3 p-5"
+            />
+            <button class="ml-3 p-2 rounded-md hover:text-red-600">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
   <body>
-    <main>
+    <main class="mb-32">
       <div class="navbar bg-base-100">
         <div class="flex-1">
           <a href="/index.html" class="btn btn-ghost text-xl">Todo List</a>
         </div>
       </div>
-      <div
-        class="card-todo lg:mx-32 mx-5 my-2 grid lg:grid-cols-4 grid-cols-2 gap-3"
-      >
+      <div id="card-todo" class="lg:mx-32 mx-5 my-2 grid lg:grid-cols-4 gap-3">
         <div class="card lg:w-60 text-white border-gray-700 border-2">
           <div class="card-body">
-            <h2 class="card-title">Sehari hari</h2>
+            <h2 class="card-title">${todo.title}</h2>
             <div class="card-actions justify-end mt-3">
-              <a
-                href="/pages/detail_todo.html"
-                class="bg-yellow-400 text-black py-1 px-2 rounded-md hover:bg-yellow-600"
+              <button
+                id="${index}"
+                class="detail-btn bg-red-700 text-white py-1 px-2 rounded-md hover:bg-red-800"
+              >
+                Delete
+              </button>
+              <button
+                id="${index}"
+                class="detail-btn bg-yellow-400 text-black py-1 px-2 rounded-md hover:bg-yellow-600"
               >
                 Detail
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -37,5 +41,7 @@
         Add
       </a>
     </main>
+
+    <script src="/script/index.js"></script>
   </body>
 </html>

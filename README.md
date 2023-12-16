@@ -8,3 +8,4 @@ Selamat datang di proyek To-Do List, sebuah aplikasi web yang dirancang untuk me
 - JavaScript
 - Tailwind CSS
 - DaisyUI
+- Font Awesome

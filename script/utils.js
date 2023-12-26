@@ -8,7 +8,7 @@ export function getAllMyTodo() {
 
 export function createList() {
   const list = document.createElement("div");
-  list.className = "flex items-center bg-slate-700 rounded-md p-3 mt-2";
+  list.className = "flex items-center bg-gray-700 rounded-md p-3 mt-2";
   list.innerHTML = `
     <input type="checkbox" class="check-todo checkbox" />
     <input type="text" placeholder="My todo ..." class="input-todo input input-sm w-full ml-3 p-5" />

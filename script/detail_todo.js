@@ -16,7 +16,7 @@ myTodo[id].todoList.forEach((todo) => {
 
 function generateList(todo) {
   const list = document.createElement("div");
-  list.className = "flex items-center bg-slate-700 rounded-md p-3 mt-2";
+  list.className = "flex items-center bg-gray-700 rounded-md p-3 mt-2";
   list.innerHTML = `
       <input type="checkbox" class="check-todo checkbox" ${
         todo.checked ? "checked" : ""

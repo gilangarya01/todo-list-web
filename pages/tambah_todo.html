@@ -11,14 +11,16 @@
     />
   </head>
   <body>
-    <main class="mb-32">
-      <div class="navbar bg-base-100">
+    <header>
+      <div class="navbar fixed top-0 z-10 md:px-20 bg-base-300">
         <div class="flex-1">
           <a href="/index.html" class="btn btn-ghost text-xl"
             ><i class="fa-solid fa-house"></i> Back</a
           >
         </div>
       </div>
+    </header>
+    <main class="mb-32 mt-28">
       <div class="lg:mx-32 mx-5" id="1">
         <input
           id="title-todo"
@@ -29,19 +31,20 @@
         <button id="add-todo" class="btn btn-success mt-5">
           <i class="fa-solid fa-plus text-lg"></i> Add New
         </button>
-        <div id="todo-area" class="my-5">
-          <div class="flex items-center bg-slate-700 rounded-md p-3 mt-2">
+        <section id="todo-area" class="my-5">
+          <!-- TodoList -->
+          <div class="bg-gray-700 flex items-center rounded-md p-3 mt-2">
             <input type="checkbox" class="check-todo checkbox" />
             <input
               type="text"
               placeholder="My todo ..."
-              class="input-todo input input-sm w-full ml-3 p-5"
+              class="input-todo input input-bordered input-sm w-full ml-3 p-5"
             />
-            <button class="delete-todo ml-3 p-2 rounded-md hover:text-red-600">
-              <i class="fa-solid fa-trash"></i>
+            <button class="delete-todo ml-3 p-2 rounded-md hover:text-red-700">
+              <i class="fa-solid fa-trash text-lg"></i>
             </button>
           </div>
-        </div>
+        </section>
       </div>
       <button
         id="save-todo"

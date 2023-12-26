@@ -1,47 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
-    <link rel="stylesheet" href="/dist/output.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
-    <main class="mb-32">
-      <div class="navbar bg-base-100">
+    <header>
+      <div class="navbar fixed top-0 z-10 md:px-20 bg-base-300">
         <div class="flex-1">
           <a href="/index.html" class="btn btn-ghost text-xl">Todo List</a>
         </div>
       </div>
-      <div id="card-todo" class="lg:mx-32 mx-5 my-2 grid lg:grid-cols-4 gap-3">
-        <div class="card lg:w-60 text-white border-gray-700 border-2">
-          <div class="card-body">
-            <h2 class="card-title">${todo.title}</h2>
-            <div class="card-actions justify-end mt-3">
-              <button
-                id="${index}"
-                class="detail-btn bg-red-700 text-white py-1 px-2 rounded-md hover:bg-red-800"
-              >
-                Delete
-              </button>
-              <button
-                id="${index}"
-                class="detail-btn bg-yellow-400 text-black py-1 px-2 rounded-md hover:bg-yellow-600"
-              >
-                Detail
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+    </header>
+    <main class="mt-28">
+      <section
+        id="card-todo"
+        class="lg:mx-32 mx-5 my-2 grid lg:grid-cols-4 gap-3"
+      ></section>
+
       <a
         href="/pages/tambah_todo.html"
-        class="btn btn-warning fixed lg:inset-x-60 inset-x-0 bottom-0 m-5"
+        class="btn btn-warning btn-circle w-16 h-16 fixed right-0 bottom-0 m-5"
       >
-        Add
+        <i class="fa-solid fa-plus text-xl"></i>
       </a>
     </main>
 
-    <script src="/script/index.js"></script>
+    <script type="module" src="/script/index.js"></script>
   </body>
 </html>

@@ -26,6 +26,7 @@ function handleSaveTodo() {
 
     console.log(myTodo);
     localStorage.setItem("myTodo", JSON.stringify(myTodo));
+    window.location.href = "/index.html";
   }
 }
 
